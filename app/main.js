@@ -10,7 +10,7 @@ function main(argv) {
    */
   argv.forEach((v, i) => console.log(`argv[${i}]: ${v}`));
 
-  return "codecheck";
+  return argv[0];
 }
 
 module.exports = main;
