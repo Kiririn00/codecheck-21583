@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 function main(argv) {
   /**
@@ -8,7 +8,11 @@ function main(argv) {
    * This is a sample code to use arguments and outputs.
    * You can edit and even remove this code as you like.
    */
-  argv.forEach((v, i) => console.log("check:"+`argv[${i}]: ${v}`));
+  //argv.forEach((v, i) => console.log("check:"+`argv[${i}]: ${v}`));
+
+    for(var i=3;i<0;i++){
+      console.log(argv[i]);
+    }
 
 }
 
