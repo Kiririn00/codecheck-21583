@@ -5,7 +5,7 @@ const codecheck = require("codecheck");
 const app = codecheck.consoleApp(process.env.APP_COMMAND);
 
 describe("CLIアプリは", () => {
-  it("'World'が与えられた場合に'Hello World!'と出力できる。", () => {
+  it("'World'が与えられた場合に'Hello World!'と出力できる。", (argv[0]) => {
   	return app.codecheck("World").then( result =>  {
       expect(result.code).to.equal(0, "expect codecheck CLI to exit with status code 0");
       expect(result.stdout.join("")).to.equal("Hello World!");
