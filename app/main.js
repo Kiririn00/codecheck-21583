@@ -9,7 +9,8 @@ function main(argv) {
    * You can edit and even remove this code as you like.
    */
   argv.forEach((v, i) => console.log(`argv[${i}]: ${v}`));
-  console.log("codecheck");
+
+  return "codecheck";
 }
 
 module.exports = main;
